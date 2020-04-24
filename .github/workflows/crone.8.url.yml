@@ -1,7 +1,7 @@
 name: work in crone
 on:
   schedule:
-    - cron:  '0 */8 * * *'    
+    - cron:  '0 */4 * * *'    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,5 +33,4 @@ jobs:
            sudo pip3 install imutils
            sudo pip3 install streamlink
            sudo pip3 install Pillow
-#           sudo python3 /opt/ts_ytb.py /opt/ in/ https://www.youtube.com/watch?v=S76QcLE5eMc
-#           sudo python3 /opt/ts_time.py /opt/ in/ https://files.atriw.com/mstream/zubryonline.stream/index.m3u8
+           sudo python3 /opt/ts_ytb.py /opt/ in/ https://youtu.be/tXEjMm3-_XA
