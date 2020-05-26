@@ -209,9 +209,9 @@ if __name__ == "__main__":
                 'size_rect':'0','count_rect':'0','screen':'none' })
     print("read csv")      
     now1 = datetime.datetime.now()
-    if os.path.exists("Readme.md"):
+    if os.path.exists("README.md"):
         if not os.path.exists(now1.strftime('%Y%m%d')+".md"):
-            os.rename("Readme.md", now1.strftime('%Y%m%d')+".md")    
+            os.rename("README.md", now1.strftime('%Y%m%d')+".md")    
     df = pd.read_csv(file_csv)
     datanow = df['data'].tolist()
     datanum = datanow[-1]
